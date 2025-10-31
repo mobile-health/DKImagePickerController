@@ -1,52 +1,50 @@
 {
-  "object": {
-    "pins": [
-      {
-        "package": "DKCamera",
-        "repositoryURL": "https://github.com/zhangao0086/DKCamera",
-        "state": {
-          "branch": "master",
-          "revision": "5c691d11014b910aff69f960475d70e65d9dcc96",
-          "version": null
-        }
-      },
-      {
-        "package": "DKPhotoGallery",
-        "repositoryURL": "https://github.com/zhangao0086/DKPhotoGallery",
-        "state": {
-          "branch": "master",
-          "revision": "311c1bc7a94f1538f82773a79c84374b12a2ef3d",
-          "version": null
-        }
-      },
-      {
-        "package": "SDWebImage",
-        "repositoryURL": "https://github.com/SDWebImage/SDWebImage",
-        "state": {
-          "branch": null,
-          "revision": "3e48cb68d8e668d146dc59c73fb98cb628616236",
-          "version": "5.13.2"
-        }
-      },
-      {
-        "package": "SwiftyGif",
-        "repositoryURL": "https://github.com/kirualex/SwiftyGif.git",
-        "state": {
-          "branch": null,
-          "revision": "db0c122b671bc9760385e0355be00eede3b7bb44",
-          "version": "5.4.3"
-        }
-      },
-      {
-        "package": "TOCropViewController",
-        "repositoryURL": "https://github.com/TimOliver/TOCropViewController",
-        "state": {
-          "branch": null,
-          "revision": "dad97167bf1be16aeecd109130900995dd01c515",
-          "version": "2.6.0"
-        }
+  "pins" : [
+    {
+      "identity" : "dkcamera",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/lightningkite/DKCamera",
+      "state" : {
+        "revision" : "e1ed8cdabb241c95c48ec9bf666692717a105bf5",
+        "version" : "1.6.9"
       }
-    ]
-  },
-  "version": 1
+    },
+    {
+      "identity" : "dkphotogallery",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/lightningkite/DKPhotoGallery",
+      "state" : {
+        "branch" : "master",
+        "revision" : "b560f85f2a247b4bb6b0e31b6ea0fd09c120c316"
+      }
+    },
+    {
+      "identity" : "sdwebimage",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/SDWebImage/SDWebImage",
+      "state" : {
+        "revision" : "cac9a55a3ae92478a2c95042dcc8d9695d2129ca",
+        "version" : "5.21.0"
+      }
+    },
+    {
+      "identity" : "swiftygif",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/alexiscreuzot/SwiftyGif.git",
+      "state" : {
+        "revision" : "4430cbc148baa3907651d40562d96325426f409a",
+        "version" : "5.4.5"
+      }
+    },
+    {
+      "identity" : "tocropviewcontroller",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/lightningkite/TOCropViewController",
+      "state" : {
+        "branch" : "main",
+        "revision" : "77840468d06a7a071920706e9f70453b5eb3acca"
+      }
+    }
+  ],
+  "version" : 2
 }

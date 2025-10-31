@@ -1,16 +1,16 @@
 Pod::Spec.new do |s|
   s.name          = "DKImagePickerController"
-  s.version       = "4.3.9"
+  s.version       = "4.3.5-LK"
   s.summary       = "DKImagePickerController is a highly customizable, pure-Swift library."
-  s.homepage      = "https://github.com/zhangao0086/DKImagePickerController"
+  s.homepage      = "https://github.com/lightningkite/DKImagePickerController"
   s.license       = { :type => "MIT", :file => "LICENSE" }
   s.author        = { "Bannings" => "zhangao0086@gmail.com" }
-  s.platform      = :ios, "9.0"
-  s.source        = { :git => "https://github.com/zhangao0086/DKImagePickerController.git",
+  s.platform      = :ios, "12.0"
+  s.source        = { :git => "https://github.com/lightningkite/DKImagePickerController.git",
                      :tag => s.version.to_s }
   
   s.requires_arc  = true
-  s.swift_version = ['4.2', '5']
+  s.swift_version = '5'
 
   s.subspec 'Core' do |core|
     core.dependency 'DKImagePickerController/ImageDataManager'
@@ -27,7 +27,6 @@ Pod::Spec.new do |s|
 
   s.subspec 'Resource' do |resource|
     resource.resource_bundle = { "DKImagePickerController" => "Sources/DKImagePickerController/Resource/Resources/*" }
-
     resource.source_files = "Sources/DKImagePickerController/Resource/DKImagePickerControllerResource.swift"
   end
 
@@ -40,21 +39,22 @@ Pod::Spec.new do |s|
 
   s.subspec 'Camera' do |camera|
     camera.dependency 'DKImagePickerController/Core'
-    camera.dependency 'DKCamera'
+    camera.dependency 'DKCamera', '~> 1.6.9'
 
     camera.source_files = "Sources/Extensions/DKImageExtensionCamera.swift"
   end
 
   s.subspec 'InlineCamera' do |inlineCamera|
     inlineCamera.dependency 'DKImagePickerController/Core'
-    inlineCamera.dependency 'DKCamera'
+    inlineCamera.dependency 'DKCamera', '~> 1.6.9'
 
     inlineCamera.source_files = "Sources/Extensions/DKImageExtensionInlineCamera.swift"
   end
 
   s.subspec 'PhotoEditor' do |photoEditor|
     photoEditor.dependency 'DKImagePickerController/Core'
-    photoEditor.dependency 'CropViewController', '~> 2.5'
+    photoEditor.dependency 'CropViewController', '2.6.1-LK'
+    photoEditor.platform = :ios, "12.0"
 
     photoEditor.source_files = "Sources/Extensions/DKImageExtensionPhotoCropper.swift"
   end
