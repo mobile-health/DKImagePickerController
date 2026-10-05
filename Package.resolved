@@ -3,10 +3,10 @@
     {
       "identity" : "dkcamera",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/lightningkite/DKCamera",
+      "location" : "https://github.com/mobile-health/DKCamera",
       "state" : {
-        "revision" : "e1ed8cdabb241c95c48ec9bf666692717a105bf5",
-        "version" : "1.6.9"
+        "revision" : "acc02b54ddd940b1f655eafbadec324eeda956fc",
+        "version" : "1.6.14"
       }
     },
     {
@@ -14,8 +14,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/lightningkite/DKPhotoGallery",
       "state" : {
-        "branch" : "master",
-        "revision" : "b560f85f2a247b4bb6b0e31b6ea0fd09c120c316"
+        "revision" : "8833a8f64427c60540e47a065df8a93080c97177",
+        "version" : "1.0.2"
       }
     },
     {
